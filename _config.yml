@@ -59,7 +59,7 @@ lines: # You can add HTML Tags in the Text
   - text: "The lower you fall, the higher you'll fly."
   - text: "Where’s your will to be weird?"
 
-me-img: "/img/jetpacktocat.png"
+me-img: "/img/chyi.jpg"
 
 ################
 # Web app mode #
@@ -146,8 +146,8 @@ social:
 # Sections shown in the index page
 
 pages_list:
-  About: 'about'
-  Blog: 'latest-post'
+  # About: 'about'
+  # Blog: 'latest-post'
   Timeline: 'timeline'
   Contact: 'contact'
 
