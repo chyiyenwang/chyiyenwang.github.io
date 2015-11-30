@@ -57,24 +57,25 @@ start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
   - text: "Web Developer"
-  - text: "Where’s your will to be weird?"
+  - text: "Life-long learner"
+  - text: "Adventurer"
 
-me-img: "/img/chyi.jpg"
+me-img: "/img/chyi.png"
 
 ################
 # Web app mode #
 ################
 
-web-app-mode: True
+# web-app-mode: True
 
-# Icons for Web App mode
+# # Icons for Web App mode
 
-icon-36p: "/img/web-app/icon-36p.png"
-icon-48p: "/img/web-app/icon-48p.png"
-icon-72p: "/img/web-app/icon-72p.png"
-icon-96p: "/img/web-app/icon-96p.png"
-icon-144p: "/img/web-app/icon-144p.png"
-icon-192p: "/img/web-app/icon-192p.png"
+# icon-36p: "/img/web-app/icon-36p.png"
+# icon-48p: "/img/web-app/icon-48p.png"
+# icon-72p: "/img/web-app/icon-72p.png"
+# icon-96p: "/img/web-app/icon-96p.png"
+# icon-144p: "/img/web-app/icon-144p.png"
+# icon-192p: "/img/web-app/icon-192p.png"
 
 ########
 # Blog #
@@ -105,10 +106,13 @@ syntax-highlight: True
 
 events:
   - image: "/img/timeline/spidertocat.png"
-    date: "September 2013 - Today"
-    description: "Saving the neighborhood!"
+    date: "November 2015"
+    description: "<a href='https://halfway-chyiwang.herokuapp.com/'>Halfway</a>"
   - image: "/img/timeline/baracktocat.jpg"
-    date: "September 2007 - August 2013"
+    date: "October 2015"
+    description: "<a href='http://chyiyenwang.github.io/My-Game/'>Pong</a>"
+  - image: "/img/timeline/dodgeball.jpg"
+    date: "August 2015"
     description: "Started coding"
 
 # First image of the Timeline
