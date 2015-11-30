@@ -42,7 +42,7 @@ favicon: "/img/favicon.ico"
 
 black-favicon: "/img/black-lab-glass.ico"
 
-background-img: "../img/intro-bg.jpg"
+background-img: "../img/background.jpg"
 
 ##############################
 # Dynamic Text on the Header #
@@ -56,7 +56,7 @@ type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "The lower you fall, the higher you'll fly."
+  - text: "Web Developer"
   - text: "Where’s your will to be weird?"
 
 me-img: "/img/chyi.jpg"
