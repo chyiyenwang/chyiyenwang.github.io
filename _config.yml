@@ -107,10 +107,10 @@ syntax-highlight: True
 events:
   - image: "/img/timeline/spidertocat.png"
     date: "November 2015"
-    description: "<a href='https://halfway-chyiwang.herokuapp.com/'>Halfway</a>"
+    description: "<h4><a href='https://halfway-chyiwang.herokuapp.com/'>Halfway</a></h4><small>A web app created for finding the halfway point between two addresses</small>"
   - image: "/img/timeline/baracktocat.jpg"
     date: "October 2015"
-    description: "<a href='http://chyiyenwang.github.io/My-Game/'>Pong</a>"
+    description: "<h4><a href='http://chyiyenwang.github.io/My-Game/'>Pong</a></h4><small>A recreation of the classic game Pong</small>"
   - image: "/img/timeline/dodgeball.jpg"
     date: "August 2015"
     description: "Started coding"
