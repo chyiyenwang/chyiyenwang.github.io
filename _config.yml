@@ -111,7 +111,7 @@ events:
   - image: "/img/timeline/halfway.png"
     date: "November 2015"
     description: "<h4><a href='https://halfway-chyiwang.herokuapp.com/'>Halfway</a></h4><small>A full stack web app created for finding the halfway point between two addresses</small>"
-  - image: "/img/timeline/baracktocat.jpg"
+  - image: "/img/timeline/pong.png"
     date: "October 2015"
     description: "<h4><a href='http://chyiyenwang.github.io/My-Game/'>Pong</a></h4><small>A recreation of the classic game Pong</small>"
   - image: "/img/timeline/dodgeball.jpg"
