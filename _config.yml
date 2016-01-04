@@ -105,9 +105,12 @@ syntax-highlight: True
 ############
 
 events:
+  - image: "/img/timeline/marvel.png"
+    date: "December 2015"
+    description: "<h4><a href='http://searchmarvel.herokuapp.com/'>Search Marvel</a></h4><small>MEAN stack using socket.io, and Twitter API created to search through the Marvel Comics database.</small>"
   - image: "/img/timeline/spidertocat.png"
     date: "November 2015"
-    description: "<h4><a href='https://halfway-chyiwang.herokuapp.com/'>Halfway</a></h4><small>A web app created for finding the halfway point between two addresses</small>"
+    description: "<h4><a href='https://halfway-chyiwang.herokuapp.com/'>Halfway</a></h4><small>A full stack web app created for finding the halfway point between two addresses</small>"
   - image: "/img/timeline/baracktocat.jpg"
     date: "October 2015"
     description: "<h4><a href='http://chyiyenwang.github.io/My-Game/'>Pong</a></h4><small>A recreation of the classic game Pong</small>"
