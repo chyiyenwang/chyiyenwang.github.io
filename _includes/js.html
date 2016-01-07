@@ -9,7 +9,12 @@
 
 <!-- Plugin JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+<!-- Pace.js -->
 <script src="{{site.baseurl}}/js/loading.js"></script>
+
+<!-- SmoothScroll.js -->
+<script src="{{site.baseurl}}/js/smoothscroll.js"></script>
 
 <!-- Custom Theme JavaScript -->
 <!--* Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
@@ -269,5 +274,11 @@ function addTohistory() {
   <!-- Swipe Instructions for Post End -->
 
 {% endif %}
+
+  <script>
+    $(document).ready(function() {
+      $('a').smoothScroll();
+    });
+  </script>
 
 <!-- Javascript End -->
