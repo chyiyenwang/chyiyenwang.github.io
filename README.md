@@ -1,1 +1,1 @@
-Personl Website
+Personal Website

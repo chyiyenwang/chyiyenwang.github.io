@@ -107,7 +107,7 @@ syntax-highlight: True
 events:
   - image: "/img/timeline/todo.png"
     date: "February 2016"
-    description: "<h4><a href='https://todo-chyiyenwang.herokuapp.com/'>To-Do List React</a><small>A to-do list created using ReactJS, and Firebase.</h4>"
+    description: "<h4><a href='https://todo-chyiyenwang.herokuapp.com/'>To-Do List React</a></h4><small>A to-do list created using ReactJS, and Firebase.</small>"
   - image: "/img/timeline/marvel.png"
     date: "December 2015"
     description: "<h4><a href='http://searchmarvel.herokuapp.com/'>Search Marvel</a></h4><small>MEAN stack using socket.io, and Twitter API created to search through the Marvel Comics database.</small>"
