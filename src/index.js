@@ -1,12 +1,17 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
+import Navbar from './components/navbar';
 
 class App extends Component {
   render() {
     return (
-      <div>Chyi Wang</div>
+      <div>
+        <Navbar />
+        <div className="container">
+        </div>
+      </div>
     )
   }
 }
 
-ReactDOM.render(<App />, document.querySelector('.container'));
+ReactDOM.render(<App />, document.getElementById('page'));
