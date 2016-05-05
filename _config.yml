@@ -111,7 +111,7 @@ events:
     description: "<h4>SteamBuddy</h4><small>This is an application I'm currently building using React, Redux, and webpack as my bundler. This application allows users to tag games they would like to play cooperatively with friends. When a friend tags the same game a notification is sent out to both users.</small>"
   - image: "/img/timeline/marvel.png"
     date: ""
-    description: "<h4><a href='http://searchmarvel.herokuapp.com/' target='_blank'>Search Marvel</a></h4><small>This is a MEAN stack app using socket.io, and consuming the Twitter API to create a Marvel Comics wiki.  I created an API to hold relevant information for most comic book characters in the Marvel universe.  The latest original tweets about that character are then shown in each character page.</small>"
+    description: "<h4><a href='http://searchmarvel.herokuapp.com/' target='_blank'>Search Marvel</a></h4><small>This is a MEAN stack app using socket.io, and consuming the Twitter API to create a Marvel Comics wiki.  I created an API to hold relevant information for most comic book characters in the Marvel universe.  The latest tweets about that character are then shown in each character page.</small>"
   - image: "/img/timeline/halfway.png"
     date: ""
     description: "<h4><a href='https://halfway-chyiwang.herokuapp.com/' target='_blank'>Halfway</a></h4><small>This is a full stack web app utilizing Express and Node.js for the backend. This application finds a halfway destination (ie. coffee shop, restaurant, bar, etc) between two addresses by consuming the Google Maps Geolocation, Directions, and Places API.</small>"
