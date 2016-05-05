@@ -106,6 +106,9 @@ syntax-highlight: True
 ############
 
 events:
+  - image: "/img/timeline/wip.jpg"
+    date: ""
+    description: "<h4>SteamBuddy</h4><small>This is an application I'm currently building using React, Redux, and webpack as my bundler. This application allows users to tag games they would like to play cooperatively with friends. When a friend tags the same game a notification is sent out to both users.</small>"
   - image: "/img/timeline/marvel.png"
     date: ""
     description: "<h4><a href='http://searchmarvel.herokuapp.com/' target='_blank'>Search Marvel</a></h4><small>This is a MEAN stack app using socket.io, and consuming the Twitter API to create a Marvel Comics wiki. While growing up I've always enjoyed reading comics so I wanted to create an app that reflects that. I created an API to hold relevant information for most comic book characters in the Marvel universe. This app utilizes two-way binding from Angular to search in real-time for the users favorite (or not so favorite) comic book character and retrieving biographical information about that character. The latest original tweets about that character are then shown in each character page.</small>"
