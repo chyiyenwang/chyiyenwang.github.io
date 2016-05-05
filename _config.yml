@@ -108,13 +108,13 @@ syntax-highlight: True
 events:
   - image: "/img/timeline/marvel.png"
     date: ""
-    description: "<h4><a href='http://searchmarvel.herokuapp.com/' target='_blank'>Search Marvel</a></h4><small>MEAN stack using socket.io, and Twitter API created to search through the Marvel Comics database.</small>"
+    description: "<h4><a href='http://searchmarvel.herokuapp.com/' target='_blank'>Search Marvel</a></h4><small>This is a MEAN stack app using socket.io, and consuming the Twitter API to create a Marvel Comics wiki. While growing up I've always enjoyed reading comics so I wanted to create an app that reflects that. I created an API to hold relevant information for most comic book characters in the Marvel universe. This app utilizes two-way binding from Angular to search in real-time for the users favorite (or not so favorite) comic book character and retrieving biographical information about that character. The latest original tweets about that character are then shown in each character page.</small>"
   - image: "/img/timeline/halfway.png"
     date: ""
-    description: "<h4><a href='https://halfway-chyiwang.herokuapp.com/' target='_blank'>Halfway</a></h4><small>A full stack web app created for finding the halfway point between two addresses.</small>"
+    description: "<h4><a href='https://halfway-chyiwang.herokuapp.com/' target='_blank'>Halfway</a></h4><small>This is a full stack web app utilizing Express and Node.js for the backend. This application finds a halfway destination (ie. coffee shop, restaurant, bar, etc) between two addresses by consuming the Google Maps Geolocation, Directions, and Places API. The inspiration for this app came from being frustrated with trying to find an actual halfway destination between myself and my friends.</small>"
   - image: "/img/timeline/pong.png"
     date: ""
-    description: "<h4><a href='http://chyiyenwang.github.io/My-Game/' target='_blank'>Pong</a></h4><small>A recreation of the classic game Pong.</small>"
+    description: "<h4><a href='http://chyiyenwang.github.io/My-Game/' target='_blank'>Pong</a></h4><small>A front end web app created using the HTML5 Canvas API. This project was inspired by the Atari game of the same name - Pong. I have always been and still am a big gamer and I decided to create a video game myself so I thought to myself why not make a game in homage of Pong.</small>"
 
 # First image of the Timeline
 
