@@ -2,11 +2,11 @@
   "name": "vite-project",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://chyiyenwang.github.io/chyiyenwang.github.io",
+  "homepage": "https://chyiyenwang.github.io",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
