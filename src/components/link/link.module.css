@@ -1,0 +1,54 @@
+.link {
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 45px;
+  width: 45px;
+  border-radius: 999px;
+
+  text-decoration: none;
+  overflow: hidden;
+
+  transition:
+    width 300ms ease,
+    background-color 200ms ease;
+
+  &:hover {
+    width: 140px;
+
+    .label {
+      opacity: 1;
+      transform: translateX(0);
+      max-width: 100px;
+    }
+
+    .icon {
+      transform: translateX(-2px);
+    }
+  }
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  transition: transform 300ms ease;
+}
+
+.label {
+  color: white;
+  white-space: nowrap;
+
+  opacity: 0;
+  transform: translateX(10px);
+  max-width: 0;
+
+  transition:
+    opacity 200ms ease,
+    transform 300ms ease,
+    max-width 300ms ease;
+}
+

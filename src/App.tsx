@@ -1,29 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import linkedinIcon from '/icon-linkedin.svg';
+import githubIcon from '/icon-github.svg';
+import Link from './components/link/link';
+
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+      <h1>Chyi Wang</h1>
+      <div className="links">
+        <Link
+          label='LinkedIn'
+          icon={linkedinIcon}
+          href='https://linkedin.com/in/chyiyenwang'
+          color='linkedin'
+        />
+        <Link
+          label='Github'
+          icon={githubIcon}
+          href='https://github.com/chyiyenwang'
+          color='github'
+        />
       </div>
     </>
   )
