@@ -26,7 +26,21 @@
     }
 
     .icon {
-      transform: translateX(-2px);
+      transform: translateX(-4px);
+    }
+  }
+
+  &:focus:not(:hover) {
+    width: 140px;
+
+    .label {
+      opacity: 1;
+      transform: translateX(0);
+      max-width: 100px;
+    }
+
+    .icon {
+      transform: translateX(-4px);
     }
   }
 }
@@ -43,7 +57,7 @@
   white-space: nowrap;
 
   opacity: 0;
-  transform: translateX(10px);
+  transform: translateX(8px);
   max-width: 0;
 
   transition:

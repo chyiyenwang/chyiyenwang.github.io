@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import linkedinIcon from '/icon-linkedin.svg';
 import githubIcon from '/icon-github.svg';
 import Link from './components/link/link';
