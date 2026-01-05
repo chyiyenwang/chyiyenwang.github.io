@@ -22,7 +22,17 @@
   background-color: var(--brand-github);
 }
 
+.hero-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
 .hero {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  
   width: 100px;
   height: 100px;
 }
