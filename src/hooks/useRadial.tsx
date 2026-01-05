@@ -8,7 +8,7 @@ interface UseRadial {
 const BAND_COUNT = 4;
 const DEAD_ZONE_RADIUS = 25;
 
-function useRadial(containerRef: React.RefObject<HTMLDivElement>): UseRadial {
+function useRadial(containerRef: React.RefObject<HTMLDivElement | null>): UseRadial {
   const [backgroundColor, setBackgroundColor] = useState<string>('white');
   
   const handleMouseMove = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
