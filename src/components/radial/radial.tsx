@@ -5,8 +5,8 @@ import styles from './radial.module.css';
 
 function Radial({ children }: { children: React.ReactNode }) {
   const containerRef = useRef<HTMLDivElement>(null);
-  const { handleMouseMove, backgroundColor } = useRadial(containerRef);
-
+  const { handleMouseMove, backgroundColor, imageUrl } = useRadial(containerRef);
+  console.log('imageUrl:', imageUrl);
   return (
     <div
       ref={containerRef}
