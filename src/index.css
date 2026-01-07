@@ -15,25 +15,15 @@
 }
 
 body {
-  margin: 0;
   display: flex;
+
+  margin: 0;
+  
   place-items: center;
+  
   min-width: 320px;
   min-height: 100vh;
+  
   background-color: black;
   color: white;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-  z-index: 1;
-}
-
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
 }

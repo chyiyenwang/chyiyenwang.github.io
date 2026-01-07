@@ -20,7 +20,7 @@ function App() {
             />
           )}
         </Radial>
-        <h1>Chyi Wang</h1>
+        <h1 className='title'>Chyi Wang</h1>
       </div>
       <div className="links">
         <Link
