@@ -14,7 +14,6 @@ function Radial({ children }: RadialProps) {
     <div
       ref={containerRef}
       className={styles.radial}
-      style={{ backgroundColor: 'black' }}
       onMouseMove={handleMouseMove}
     >
       {children(imageUrl)}

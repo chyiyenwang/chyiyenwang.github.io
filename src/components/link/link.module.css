@@ -12,6 +12,8 @@
   text-decoration: none;
   overflow: hidden;
 
+  z-index: 1;
+
   transition:
     width 300ms ease,
     background-color 200ms ease;
