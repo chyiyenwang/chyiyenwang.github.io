@@ -1,43 +1,37 @@
-import linkedinIcon from '/icon-linkedin.svg';
-import githubIcon from '/icon-github.svg';
-import Link from './components/link/link';
-import Radial from './components/radial/radial';
+import linkedinIcon from "/icon-linkedin.svg";
+import githubIcon from "/icon-github.svg";
+import Link from "./components/link/link";
+import Radial from "./components/radial/radial";
 
-import './App.css'
-
+import "./App.css";
 
 function App() {
-
   return (
     <>
-      <div className='hero-container'>
+      <div className="hero-container">
         <Radial>
-          {((imageUrl) =>
-            <img
-              src={imageUrl}
-              alt='Chyi Wang png'
-              className='hero'
-            />
+          {(imageUrl) => (
+            <img src={imageUrl} alt="Chyi Wang png" className="hero" />
           )}
         </Radial>
-        <h1 className='title'>Chyi Wang</h1>
+        <h1 className="title">Chyi Wang</h1>
       </div>
       <div className="links">
         <Link
-          label='LinkedIn'
+          label="LinkedIn"
           icon={linkedinIcon}
-          href='https://linkedin.com/in/chyiyenwang'
-          color='linkedin'
+          href="https://linkedin.com/in/chyiyenwang"
+          color="linkedin"
         />
         <Link
-          label='Github'
+          label="Github"
           icon={githubIcon}
-          href='https://github.com/chyiyenwang'
-          color='github'
+          href="https://github.com/chyiyenwang"
+          color="github"
         />
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

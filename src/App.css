@@ -1,9 +1,10 @@
-@import './styles/colors.css';
+@import url("./styles/colors.css");
 
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
+
   text-align: center;
 }
 
@@ -25,20 +26,19 @@
 .hero-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;  
+  justify-content: center;
 }
 
 .hero {
   display: flex;
-  align-self: center;
-  justify-self: center;
-  
   width: 100px;
   height: 100px;
+  place-self: center center;
 }
 
 .title {
+  z-index: 1;
+
   font-size: 3.2em;
   line-height: 1.1;
-  z-index: 1;
 }

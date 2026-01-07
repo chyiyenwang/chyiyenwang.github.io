@@ -1,30 +1,54 @@
+.icon {
+  width: 30px;
+  height: 30px;
+
+  transition: transform 300ms ease;
+  flex-shrink: 0;
+}
+
+.label {
+  max-width: 0;
+
+  color: white;
+
+  opacity: 0;
+
+  transition:
+    opacity 200ms ease,
+    transform 300ms ease,
+    max-width 300ms ease;
+  transform: translateX(8px);
+  white-space: nowrap;
+}
+
 .link {
-  cursor: pointer;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  height: 45px;
-  width: 45px;
-  border-radius: 999px;
-
-  text-decoration: none;
-  overflow: hidden;
-
   z-index: 1;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+
+  text-decoration: none;
+
+  border-radius: 999px;
+
+  overflow: hidden;
   transition:
     width 300ms ease,
     background-color 200ms ease;
+  cursor: pointer;
 
   &:hover {
     width: 140px;
 
     .label {
-      opacity: 1;
-      transform: translateX(0);
       max-width: 100px;
+
+      opacity: 1;
+
+      transform: translateX(0);
     }
 
     .icon {
@@ -36,35 +60,16 @@
     width: 140px;
 
     .label {
-      opacity: 1;
-      transform: translateX(0);
       max-width: 100px;
+
+      opacity: 1;
+
+      transform: translateX(0);
     }
 
     .icon {
       transform: translateX(-4px);
     }
   }
-}
-
-.icon {
-  width: 30px;
-  height: 30px;
-  flex-shrink: 0;
-  transition: transform 300ms ease;
-}
-
-.label {
-  color: white;
-  white-space: nowrap;
-
-  opacity: 0;
-  transform: translateX(8px);
-  max-width: 0;
-
-  transition:
-    opacity 200ms ease,
-    transform 300ms ease,
-    max-width 300ms ease;
 }
 

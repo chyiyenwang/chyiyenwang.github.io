@@ -1,13 +1,13 @@
 .radial {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 100vw;
-  height: 100vh;
-
   position: absolute;
   top: 50%;
   left: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+
   transform: translate(-50%, -65%);
 }

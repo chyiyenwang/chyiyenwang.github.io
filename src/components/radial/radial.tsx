@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import useRadial from "../../hooks/useRadial";
 
-import styles from './radial.module.css';
+import styles from "./radial.module.css";
 
 interface RadialProps {
   children: (imageUrl: string) => React.ReactNode;
