@@ -1,6 +1,4 @@
-
-const BAND_COUNT = 4;
-const DEAD_ZONE_RADIUS = 25;
+import { BAND_COUNT, DEAD_ZONE_RADIUS } from "../constants";
 
 export function calculateCenter(rect: DOMRect) {
     return {

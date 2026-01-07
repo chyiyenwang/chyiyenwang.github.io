@@ -12,11 +12,13 @@ function App() {
     <>
       <div className='hero-container'>
         <Radial>
-          <img
-            src='/emoji.png'
-            alt='Chyi Wang png'
-            className='hero'
-          />
+          {((imageUrl) =>
+            <img
+              src={imageUrl}
+              alt='Chyi Wang png'
+              className='hero'
+            />
+          )}
         </Radial>
         <h1>Chyi Wang</h1>
       </div>

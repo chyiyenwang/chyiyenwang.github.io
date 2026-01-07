@@ -1,20 +1,23 @@
-import { useState, useRef, useEffect } from "react";
+import { useRef } from "react";
 import useRadial from "../../hooks/useRadial";
 
 import styles from './radial.module.css';
 
-function Radial({ children }: { children: React.ReactNode }) {
+interface RadialProps {
+  children: (imageUrl: string) => React.ReactNode;
+}
+
+function Radial({ children }: RadialProps) {
   const containerRef = useRef<HTMLDivElement>(null);
-  const { handleMouseMove, backgroundColor, imageUrl } = useRadial(containerRef);
-  console.log('imageUrl:', imageUrl);
+  const { handleMouseMove, imageUrl } = useRadial(containerRef);
   return (
     <div
       ref={containerRef}
       className={styles.radial}
-      style={{ backgroundColor }}
+      style={{ backgroundColor: 'black' }}
       onMouseMove={handleMouseMove}
     >
-      {children}
+      {children(imageUrl)}
     </div>
   );
 }
