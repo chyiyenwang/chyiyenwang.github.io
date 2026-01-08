@@ -10,9 +10,7 @@ function App() {
     <>
       <div className="hero-container">
         <Radial>
-          {(imageUrl) => (
-            <img src={imageUrl} alt="Chyi Wang png" className="hero" />
-          )}
+          {(imageUrl) => <img src={imageUrl} alt="Chyi Wang png" className="hero" />}
         </Radial>
         <h1 className="title">Chyi Wang</h1>
       </div>
