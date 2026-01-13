@@ -7,7 +7,7 @@ import {
   calculateCenter,
   distanceFromCenter,
   calculateVectorFromCenter,
-} from "../utils";
+} from "../utils/mouseCalculations";
 import { DEAD_ZONE_RADIUS, IMAGES } from "../constants";
 import { imageCache } from "../services/imageCache";
 
