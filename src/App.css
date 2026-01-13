@@ -23,13 +23,13 @@
   background-color: var(--brand-github);
 }
 
-.hero-container {
+.avatar-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.hero {
+.avatar {
   display: flex;
   width: 100px;
   height: 100px;

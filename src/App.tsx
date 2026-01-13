@@ -8,9 +8,9 @@ import "./App.css";
 function App() {
   return (
     <>
-      <div className="hero-container">
+      <div className="avatar-container">
         <Radial>
-          {(imageUrl) => <img src={imageUrl} alt="Chyi Wang png" className="hero" />}
+          {(imageUrl) => <img src={imageUrl} alt="avatar" className="avatar" />}
         </Radial>
         <h1 className="title">Chyi Wang</h1>
       </div>
