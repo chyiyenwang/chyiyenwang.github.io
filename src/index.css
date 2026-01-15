@@ -1,11 +1,26 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+@font-face {
+  font-family: Montserrat;
   font-weight: 400;
-  line-height: 1.5;
+  src: url('/fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-weight: 600;
+  src: url('/fonts/Montserrat/static/Montserrat-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-weight: 700;
+  src: url('/fonts/Montserrat/static/Montserrat-Bold.ttf') format('truetype');
+}
+
+:root {
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
   color: rgb(255 255 255 / 87%);
 
-  /* background-color: #242424; */
-  background-color: black;
   color-scheme: light dark;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -19,8 +34,8 @@ body {
   min-height: 100vh;
   margin: 0;
 
-  color: white;
+  color: var(--text-default);
 
-  background-color: black;
+  background-color: var(--bg-default);
   place-items: center;
 }

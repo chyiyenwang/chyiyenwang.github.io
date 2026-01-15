@@ -1,3 +1,5 @@
+@import url('../../styles/colors.css');
+
 .icon {
   width: 30px;
   height: 30px;
@@ -9,7 +11,7 @@
 .label {
   max-width: 0;
 
-  color: white;
+  color: var(--text-default);
 
   opacity: 0;
 
@@ -29,6 +31,8 @@
   align-items: center;
   width: 45px;
   height: 45px;
+
+  font-weight: 600;
 
   text-decoration: none;
 
