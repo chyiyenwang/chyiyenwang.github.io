@@ -44,14 +44,14 @@
     background-color 200ms ease;
   cursor: pointer;
 
-  &:hover {
+
+  &:hover,
+  &:focus {
     width: 140px;
 
     .label {
       max-width: 100px;
-
       opacity: 1;
-
       transform: translateX(0);
     }
 
@@ -60,21 +60,6 @@
     }
   }
 
-  &:focus:not(:hover) {
-    width: 140px;
-
-    .label {
-      max-width: 100px;
-
-      opacity: 1;
-
-      transform: translateX(0);
-    }
-
-    .icon {
-      transform: translateX(-4px);
-    }
-  }
 }
 
 .linkedin {
