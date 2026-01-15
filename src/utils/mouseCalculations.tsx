@@ -19,7 +19,7 @@ export function calculateVectorFromCenter(
 }
 
 export function distanceFromCenter(dx: number, dy: number) {
-  return Math.sqrt(dx * dx + dy * dy);
+  return Math.hypot(dx, dy);
 }
 
 export function angleDegrees(dx: number, dy: number) {
@@ -30,8 +30,10 @@ export function normalizeAngle(angle: number) {
   return (angle + 360) % 360;
 }
 
+const CLOCK_OFFSET = 75;
+const DEGREES_PER_HOUR = 30;
 export function hourFromAngle(angle: number) {
-  return Math.floor(((angle + 75) % 360) / 30) + 1;
+  return Math.floor(((angle + CLOCK_OFFSET) % 360) / DEGREES_PER_HOUR) + 1;
 }
 
 export function getBandFromDistance(rect: DOMRect, distance: number) {

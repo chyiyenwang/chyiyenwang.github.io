@@ -11,14 +11,13 @@
 .avatar-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .avatar {
   display: flex;
   width: 100px;
   height: 100px;
-  place-self: center center;
+  place-self: center;
 }
 
 .title {
@@ -26,7 +25,7 @@
 
   font-size: 3.2em;
   line-height: 1.1;
-  margin-top: 8px;  
+  margin-top: 16px;  
 }
 
 .links {

@@ -4,20 +4,19 @@ import useRadial from "../../hooks/useRadial";
 import styles from "./radial.module.css";
 
 interface RadialProps {
-  children: (imageUrl: string) => React.ReactNode;
+  ref: React.RefObject<HTMLDivElement | null>;
+  handleMouseMove: (
+    event: React.MouseEvent<HTMLDivElement, MouseEvent>,
+  ) => void;
 }
 
-function Radial({ children }: RadialProps) {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const { handleMouseMove, imageUrl } = useRadial(containerRef);
+function Radial({ ref, handleMouseMove }: RadialProps) {
   return (
     <div
-      ref={containerRef}
-      className={styles.radial}
+      ref={ref}
       onMouseMove={handleMouseMove}
-    >
-      {children(imageUrl)}
-    </div>
+      className={styles.radial}
+    />
   );
 }
 
