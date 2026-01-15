@@ -20,14 +20,6 @@
   place-self: center;
 }
 
-.title {
-  z-index: 1;
-
-  font-size: 3.2em;
-  line-height: 1.1;
-  margin-top: 16px;  
-}
-
 .links {
   display: flex;
   flex-direction: column;
@@ -42,4 +34,3 @@
 .github {
   background-color: var(--brand-github);
 }
-

@@ -8,27 +8,37 @@ import {
   distanceFromCenter,
   calculateVectorFromCenter,
 } from "../utils/mouseCalculations";
-import { DEAD_ZONE_RADIUS, IMAGES } from "../constants";
+import { DEAD_ZONE_RADIUS } from "../constants";
 import { imageCache } from "../services/imageCache";
 
-interface UseRadial {
+interface UseRadialParams {
+  containerRef: React.RefObject<HTMLDivElement | null>;
+  imgRef: React.RefObject<HTMLImageElement | null>;
+  images: Record<number, string[]>;
+}
+
+interface UseRadialReturn {
   handleMouseMove: (
     event: React.MouseEvent<HTMLDivElement, MouseEvent>,
   ) => void;
   imageUrl: string;
 }
 
-function useRadial(
-  containerRef: React.RefObject<HTMLDivElement | null>,
-  imgRef: React.RefObject<HTMLImageElement | null>,
-): UseRadial {
-  const [imageUrl, setImageUrl] = useState<string>("/default.webp");
+function useRadial({
+  containerRef,
+  imgRef,
+  images,
+}: UseRadialParams): UseRadialReturn {
+  const [imageUrl, setImageUrl] = useState<string>("/images/default.webp");
+
+  Object.values(images).forEach((filenames) => {
+    imageCache.preloadAll(filenames);
+  });
 
   const handleMouseMove = (
     event: React.MouseEvent<HTMLDivElement, MouseEvent>,
   ) => {
     if (!containerRef.current || !imgRef.current) return;
-    console.log(event);
 
     const { clientX, clientY } = event;
     const rect = containerRef.current.getBoundingClientRect();
@@ -45,7 +55,7 @@ function useRadial(
     const distance = distanceFromCenter(dx, dy);
 
     if (distance <= DEAD_ZONE_RADIUS) {
-      setImageUrl(imageCache.getSrc(IMAGES[0][0]));
+      setImageUrl(imageCache.getSrc(images[0][0]));
       return;
     }
 
@@ -53,10 +63,10 @@ function useRadial(
     const hour = hourFromAngle(angle);
     const band = getBandFromDistance(rect, distance);
 
-    setImageUrl(imageCache.getSrc(IMAGES[hour][band]));
+    setImageUrl(imageCache.getSrc(images[hour][band]));
   };
 
-  return { handleMouseMove, imageUrl  };
+  return { handleMouseMove, imageUrl };
 }
 
 export default useRadial;

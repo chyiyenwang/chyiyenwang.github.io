@@ -1,23 +1,24 @@
 class ImageCache {
   private cache: Map<string, HTMLImageElement> = new Map();
 
-  preload(src: string): HTMLImageElement {
-    if (this.cache.has(src)) {
-      return this.cache.get(src)!;
+  preload(filename: string): HTMLImageElement {
+    if (this.cache.has(filename)) {
+      return this.cache.get(filename)!;
     }
 
     const img = new Image();
-    img.src = src;
-    this.cache.set(src, img);
+    const path = `/images/${filename}`;
+    img.src = path;
+    this.cache.set(filename, img);
     return img;
   }
 
-  preloadAll(srcs: string[]): void {
-    srcs.forEach((src) => this.preload(src));
+  preloadAll(filenames: string[]): void {
+    filenames.forEach((filename) => this.preload(filename));
   }
 
-  getSrc(src: string, fallback: string = '/default.webp'): string {
-    return this.cache.has(src) ? src : fallback;
+  getSrc(filename: string, fallback: string = "/images/default.webp"): string {
+    return this.cache.has(filename) ? `/images/${filename}` : fallback;
   }
 }
 

@@ -1,6 +1,3 @@
-import { useRef } from "react";
-import useRadial from "../../hooks/useRadial";
-
 import styles from "./radial.module.css";
 
 interface RadialProps {
@@ -12,11 +9,7 @@ interface RadialProps {
 
 function Radial({ ref, handleMouseMove }: RadialProps) {
   return (
-    <div
-      ref={ref}
-      onMouseMove={handleMouseMove}
-      className={styles.radial}
-    />
+    <div ref={ref} onMouseMove={handleMouseMove} className={styles.radial} />
   );
 }
 
