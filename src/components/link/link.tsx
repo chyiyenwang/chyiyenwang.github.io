@@ -1,18 +1,23 @@
 import styles from "./link.module.css";
 
-type ColorTypes = "linkedin" | "github";
+type Brand = "linkedin" | "github";
 
 interface LinkProps {
   icon: string;
   href: string;
   label: string;
-  color: ColorTypes;
+  brand: Brand;
 }
 
-function Link({ icon, href, label, color }: LinkProps) {
+const brandClass: Record<Brand, string> = {
+  linkedin: styles.linkedin,
+  github: styles.github,
+};
+
+function Link({ icon, href, label, brand }: LinkProps) {
   return (
     <a
-      className={[styles.link, color].filter(Boolean).join(" ")}
+      className={[styles.link, brandClass[brand]].filter(Boolean).join(" ")}
       href={href}
       target="_blank"
     >

@@ -76,3 +76,11 @@
     }
   }
 }
+
+.linkedin {
+  background-color: var(--brand-linkedin);
+}
+
+.github {
+  background-color: var(--brand-github);
+}

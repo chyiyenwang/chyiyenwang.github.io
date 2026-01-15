@@ -21,7 +21,7 @@ function RadialAvatar({ images, name }: RadialAvatarProps) {
   return (
     <>
       <Radial ref={radialRef} handleMouseMove={handleMouseMove} />
-      <img ref={imgRef} src={imageUrl} alt="avatar" className="avatar" />
+      <img ref={imgRef} src={imageUrl} alt="avatar" className={styles.avatar} />
       <h1 className={styles.name}>{name}</h1>
     </>
   );

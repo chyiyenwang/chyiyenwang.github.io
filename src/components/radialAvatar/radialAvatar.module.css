@@ -1,3 +1,10 @@
+.avatar {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  place-self: center;
+}
+
 .name {
   z-index: 1;
 
