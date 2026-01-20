@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   angleDegrees,
   normalizeAngle,
@@ -31,9 +31,11 @@ function useRadial({
 }: UseRadialParams): UseRadialReturn {
   const [imageUrl, setImageUrl] = useState<string>("/images/default.webp");
 
-  Object.values(images).forEach((filenames) => {
-    imageCache.preloadAll(filenames);
-  });
+  useEffect(() => {
+    Object.values(images).forEach((filenames) => {
+      imageCache.preloadAll(filenames);
+    });
+  }, [images])
 
   const handleMouseMove = (
     event: React.MouseEvent<HTMLDivElement, MouseEvent>,
