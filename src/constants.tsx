@@ -15,5 +15,5 @@ export const IMAGES: Record<Hour, string[]> = {
   9: ["09_00.webp", "09_01.webp", "09_02.webp", "09_03.webp"],
   10: ["10_00.webp", "10_01.webp", "10_02.webp", "10_03.webp"],
   11: ["11_00.webp", "11_01.webp", "11_02.webp", "11_03.webp"],
-  12: ["12_00.webp", "12_01.webp", "12_02.webp", "12.webp"],
+  12: ["12_00.webp", "12_01.webp", "12_02.webp", "12_03.webp"],
 };
