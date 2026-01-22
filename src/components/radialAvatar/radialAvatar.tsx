@@ -4,12 +4,14 @@ import useRadial from "../../hooks/useRadial";
 
 import styles from "./radialAvatar.module.css";
 
+type Hour = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
+
 interface RadialAvatarProps {
-  images: Record<number, string[]>;
-  name: string;
+  images: Record<Hour, string[]>;
+  label: string;
 }
 
-function RadialAvatar({ images, name }: RadialAvatarProps) {
+function RadialAvatar({ images, label }: RadialAvatarProps) {
   const radialRef = useRef<HTMLDivElement | null>(null);
   const imgRef = useRef<HTMLImageElement | null>(null);
   const { handleMouseMove, imageUrl } = useRadial({
@@ -25,11 +27,11 @@ function RadialAvatar({ images, name }: RadialAvatarProps) {
         <img
           ref={imgRef}
           src={imageUrl}
-          alt="avatar"
+          alt={`${imageUrl} avatar`}
           className={styles.avatar}
         />
       </div>
-      <h1 className={styles.name}>{name}</h1>
+      <h1 className={styles.label}>{label}</h1>
     </>
   );
 }

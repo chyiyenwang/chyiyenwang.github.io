@@ -21,7 +21,7 @@
   place-self: center;
 }
 
-.name {
+.label {
   z-index: 1;
 
   font-size: 3.2em;

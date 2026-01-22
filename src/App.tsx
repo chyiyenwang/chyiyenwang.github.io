@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <div className={styles["avatar-container"]}>
-        <RadialAvatar images={IMAGES} name="Chyi Wang" />
+        <RadialAvatar images={IMAGES} label="Chyi Wang" />
       </div>
       <div className={styles.links}>
         <Link
