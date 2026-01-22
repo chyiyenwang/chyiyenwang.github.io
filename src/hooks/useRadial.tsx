@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback, useMemo } from "react";
+import { useEffect, useState } from "react";
 import {
   angleDegrees,
   normalizeAngle,
@@ -87,12 +87,6 @@ function useRadial({
 
     setImageUrl((prev) => prev === src ? prev : src);
   }
-  // , [
-  //   rect?.width,
-  //   rect?.height,
-  //   img?.width,
-  //   rect?.height
-  // ]);
 
   return { handleMouseMove, imageUrl };
 }
