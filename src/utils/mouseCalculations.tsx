@@ -34,7 +34,8 @@ type Hour = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
 const CLOCK_OFFSET = 75;
 const DEGREES_PER_HOUR = 30;
 export function hourFromAngle(angle: number): Hour {
-  const hour = Math.floor(((angle + CLOCK_OFFSET) % 360) / DEGREES_PER_HOUR) + 1;
+  const hour =
+    Math.floor(((angle + CLOCK_OFFSET) % 360) / DEGREES_PER_HOUR) + 1;
 
   if (hour < 0 || hour > 12) {
     throw new Error("Invaliad hour");

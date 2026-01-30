@@ -8,7 +8,9 @@ interface RadialProps {
 }
 
 function Radial({ ref, handleMouseMove }: RadialProps) {
-  return <div ref={ref} onMouseMove={handleMouseMove} className={styles.radial} />
+  return (
+    <div ref={ref} onMouseMove={handleMouseMove} className={styles.radial} />
+  );
 }
 
 export default Radial;

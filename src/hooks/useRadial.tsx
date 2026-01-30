@@ -44,7 +44,7 @@ function useRadial({
     containerRef.current,
     imgRef.current,
     window.innerHeight,
-    window.innerWidth
+    window.innerWidth,
   ]);
 
   useEffect(() => {
@@ -53,7 +53,9 @@ function useRadial({
     });
   }, [images]);
 
-  const handleMouseMove = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+  const handleMouseMove = (
+    event: React.MouseEvent<HTMLDivElement, MouseEvent>,
+  ) => {
     if (!rect || !img) return;
 
     const { clientX, clientY } = event;
@@ -73,20 +75,20 @@ function useRadial({
 
       const winkImage = images[0][0];
       const src = imageCache.getSrc(winkImage);
-      setImageUrl((prev) => prev === src ? prev : src);
+      setImageUrl((prev) => (prev === src ? prev : src));
       return;
-    };
+    }
 
     const angle = normalizeAngle(angleDegrees(dx, dy));
     const hour = hourFromAngle(angle);
     const band = getBandFromDistance(rect, distance);
 
     if (!images[hour] || !images[hour][band]) return;
-  
+
     const src = imageCache.getSrc(images[hour][band]);
 
-    setImageUrl((prev) => prev === src ? prev : src);
-  }
+    setImageUrl((prev) => (prev === src ? prev : src));
+  };
 
   return { handleMouseMove, imageUrl };
 }
