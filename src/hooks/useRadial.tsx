@@ -24,6 +24,7 @@ interface UseRadialReturn {
     event: React.MouseEvent<HTMLDivElement, MouseEvent>,
   ) => void;
   imageUrl: string;
+  initialLoaded: boolean;
 }
 
 function useRadial({
@@ -32,20 +33,35 @@ function useRadial({
   images,
 }: UseRadialParams): UseRadialReturn {
   const [imageUrl, setImageUrl] = useState<string>("/images/default.webp");
+  const [initialLoaded, setInitialLoaded] = useState<boolean>(false);
   const [rect, setRect] = useState<DOMRect | null>(null);
   const [img, setImg] = useState<DOMRect | null>(null);
 
   useEffect(() => {
+    const img = new Image();
+    img.src = "/images/default.webp";
+
+    if (img.complete) {
+      setInitialLoaded(true);
+    } else {
+      img.onload = () => setInitialLoaded(true);
+      img.onerror = () => setInitialLoaded(true);
+    }
+  }, []);
+
+  useEffect(() => {
     if (!containerRef.current || !imgRef.current) return;
 
-    setRect(containerRef.current.getBoundingClientRect());
-    setImg(imgRef.current.getBoundingClientRect());
-  }, [
-    containerRef.current,
-    imgRef.current,
-    window.innerHeight,
-    window.innerWidth,
-  ]);
+    const observer = new ResizeObserver(() => {
+      setRect(containerRef.current!.getBoundingClientRect());
+      setImg(imgRef.current!.getBoundingClientRect());
+    });
+
+    observer.observe(containerRef.current);
+    observer.observe(imgRef.current);
+
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     Object.values(images).forEach((filenames) => {
@@ -90,7 +106,7 @@ function useRadial({
     setImageUrl((prev) => (prev === src ? prev : src));
   };
 
-  return { handleMouseMove, imageUrl };
+  return { handleMouseMove, imageUrl, initialLoaded };
 }
 
 export default useRadial;

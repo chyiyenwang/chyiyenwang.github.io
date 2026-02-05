@@ -14,7 +14,7 @@ interface RadialAvatarProps {
 function RadialAvatar({ images, label }: RadialAvatarProps) {
   const radialRef = useRef<HTMLDivElement | null>(null);
   const imgRef = useRef<HTMLImageElement | null>(null);
-  const { handleMouseMove, imageUrl } = useRadial({
+  const { handleMouseMove, imageUrl, initialLoaded } = useRadial({
     containerRef: radialRef,
     imgRef,
     images,
@@ -23,7 +23,7 @@ function RadialAvatar({ images, label }: RadialAvatarProps) {
   return (
     <>
       <Radial ref={radialRef} handleMouseMove={handleMouseMove} />
-      <div className={styles.border}>
+      <div className={styles.border} style={{ opacity: initialLoaded ? 1 : 0 }}>
         <img
           ref={imgRef}
           src={imageUrl}
