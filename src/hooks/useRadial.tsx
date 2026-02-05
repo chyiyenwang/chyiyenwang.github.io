@@ -38,8 +38,7 @@ function useRadial({
   const [img, setImg] = useState<DOMRect | null>(null);
 
   useEffect(() => {
-    const img = new Image();
-    img.src = "/images/default.webp";
+    const img = imageCache.preload("default.webp");
 
     if (img.complete) {
       setInitialLoaded(true);
