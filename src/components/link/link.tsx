@@ -21,7 +21,7 @@ function Link({ icon, href, label, brand }: LinkProps) {
       href={href}
       target="_blank"
     >
-      <img src={icon} className={styles.icon} />
+      <img src={icon} alt={`${brand} icon`}className={styles.icon} />
       <span className={styles.label}>{label}</span>
     </a>
   );
