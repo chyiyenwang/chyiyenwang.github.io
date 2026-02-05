@@ -26,6 +26,8 @@
 
   font-size: 3.2em;
   line-height: 1.1;
+
+  pointer-events: none;
   margin-top: 16px;
 }
 
